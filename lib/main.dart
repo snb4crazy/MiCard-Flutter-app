@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 
+//Post about layout with examples: https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
@@ -40,6 +46,6 @@ void main() {
           ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }
