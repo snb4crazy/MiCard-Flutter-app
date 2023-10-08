@@ -12,36 +12,13 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Container(
-                height: double.infinity,
-                width: 100.0,
-                color: Colors.red,
-              ),
-              Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      color: Colors.yellow,
-                      height: 100.0,
-                      width: 100.0,
-                    ),
-                    Container(
-                      color: Colors.green,
-                      height: 100.0,
-                      width: 100.0,
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                height: double.infinity,
-                width: 100.0,
-                color: Colors.blue,
-              ),
+          child: Column(
+            children: [
+              CircleAvatar(
+                radius: 50.0,
+                backgroundColor: Colors.amber,
+                backgroundImage: AssetImage('images/flutter_ava.jpeg'),
+              )
             ],
           ),
         ),
