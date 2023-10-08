@@ -81,6 +81,42 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.home,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'Street, Toronto, ON, Canada',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'SourceSans3',
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.add_home_work,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'Another address in Portugal',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontFamily: 'SourceSans3',
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
               )
             ],
           ),
