@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 //Post about layout with examples: https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
+//Free fonts: https://fonts.google.com
 void main() {
   runApp(MyApp());
 }
@@ -35,6 +36,30 @@ class MyApp extends StatelessWidget {
                   fontSize: 20.0,
                   color: Colors.teal.shade100,
                   fontWeight: FontWeight.bold,
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.all(10.0),
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      '+1 234 5678',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontFamily: 'SourceSans3',
+                        fontSize: 20.0,
+                      ),
+                    )
+                  ],
                 ),
               )
             ],
